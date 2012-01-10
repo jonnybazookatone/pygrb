@@ -39,7 +39,7 @@ class GRB(object):
 		self._TIME = SETTIME
 	def enoughProperties(self):
 
-		if self._RA != "" and self._DEC !="":
+		if self._RA != "" and self._DEC !="" and self._TIME != "":
 			return True
 		else:
 			return False
