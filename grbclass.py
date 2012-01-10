@@ -20,6 +20,12 @@ class GRB(object):
 		self._MOON_DIST = ""
 		self._SUN_DIST = ""
 		self._TIME = ""
+		self._Name = ""
+
+	def setName(self, Name):
+		self._Name = Name
+	def getName(self):
+		return self._Name
 
 	def setRA(self, RA):
 		self._RA = RA
@@ -43,7 +49,7 @@ class GRB(object):
 
 	def enoughProperties(self):
 
-		if self._RA != "" and self._DEC !="" and self._TIME != "":
+		if self._RA != "" and self._DEC !="" and self._TIME != "" and self._Name != "":
 			return True
 		else:
 			return False
