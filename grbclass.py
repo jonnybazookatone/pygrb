@@ -35,8 +35,12 @@ class GRB(object):
 		self._MOON_DIST = MOONDIST
 	def setSUNDIST(self, SUNDIST):
 		self._SUN_DIST = _SUN_DIST
+
 	def setTIME(self, SETTIME):
 		self._TIME = SETTIME
+	def getTIME(self):
+		return self._TIME
+
 	def enoughProperties(self):
 
 		if self._RA != "" and self._DEC !="" and self._TIME != "":
